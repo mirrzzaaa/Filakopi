@@ -1,0 +1,99 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* biar isi lebih ketengah */
+    padding: 4rem 5%;
+    gap: 1rem;
+    /* jarak antar elemen lebih kecil */
+    max-width: 1000px;
+    /* perkecil kontainer */
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    /* gambar tetap nempel kiri */
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 380px;
+    /* sedikit diperkecil */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-text {
+    flex: 1;
+    font-family: "Comfortaa", sans-serif;
+    color: #333;
+    max-width: 400px;
+    /* biar teks tidak terlalu panjang */
+}
+
+.about-text p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.about-hours {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f8f9f9;
+    /* abu muda */
+    border-left: 8px solid #4c7440;
+    /* aksen hijau */
+    border-radius: 6px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.about-hours h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: #4c7440;
+}
+
+
+.about-image::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: -50px;
+    width: 90%;
+    height: 100%;
+    background: #4c744056;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        max-width: 85%;
+        justify-content: center;
+    }
+
+    .about-text {
+        max-width: 85%;
+        margin-top: 3rem;
+        text-align: justify;
+    }
+
+    .about-image::before {
+        top: 35px;
+        left: -30px;
+        width: 102%;
+    }
+
+}

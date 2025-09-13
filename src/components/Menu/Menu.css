@@ -1,0 +1,50 @@
+.menu-container {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.menu-intro {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    font-size: 1rem;
+    color: #3a4d39;
+    line-height: 1.6;
+}
+
+
+.menu-book {
+    width: 600px;
+    /* total dua halaman */
+    height: 800px;
+}
+
+.page {
+    width: fit-content;
+    /* lebar ikut gambar */
+    height: fit-content;
+    /* tinggi ikut gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.page img {
+    display: block;
+    width: 100%;
+    /* atau bisa pakai width: auto */
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .menu-intro {
+        max-width: 85%;
+    }
+
+    .page {
+        max-width: 85%;
+    }
+}

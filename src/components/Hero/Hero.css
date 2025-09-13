@@ -1,0 +1,54 @@
+.hero {
+    width: 100vw;
+    /* full lebar layar */
+    height: 100vh;
+    /* full tinggi layar */
+    background: linear-gradient(rgba(83, 134, 95, 0.7), rgba(87, 141, 100, 0.731), rgba(255, 255, 255, 0.795)),
+        url(../../assets/hero.png) center/cover no-repeat;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 800px;
+    padding-top: 120px;
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 57px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    margin-top: 20px;
+
+}
+
+@media (max-width: 768px) {
+
+    @media (max-width: 768px) {
+        .hero-text h1 {
+            font-size: 45px;
+        }
+
+        .hero-text p {
+            font-size: 0.9rem;
+        }
+    }
+
+}

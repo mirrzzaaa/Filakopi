@@ -1,0 +1,71 @@
+.reservasi {
+    padding: 80px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.reservasi-container {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    /* pastikan input tidak tertutup overlay */
+}
+
+.reservasi h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #184d26;
+}
+
+.reservasi p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #444;
+}
+
+.reservasi-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #184d26;
+    box-shadow: 0 0 5px rgba(24, 77, 38, 0.4);
+}
+
+.btn-reservasi {
+    background: #184d26;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-reservasi:hover {
+    background: #0e3116;
+}
