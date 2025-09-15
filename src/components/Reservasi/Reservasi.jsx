@@ -11,7 +11,7 @@ export default function Reservasi() {
                     Dengan reservasi, kamu bisa menentukan tanggal, jam, dan jumlah orang sesuai kebutuhanmu.</p>
             </div>
             <div className="reservasi-container">
-                <FormReservasi nomorWA="6285704956920" />
+                <FormReservasi nomorWA="6285123456789" />
             </div>
         </section>
     );

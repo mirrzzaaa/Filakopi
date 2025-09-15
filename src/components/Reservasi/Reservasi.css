@@ -104,12 +104,13 @@
 
     .reservasi-text {
         max-width: 85%;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .reservasi-container {
         width: 85%;
         max-width: 500px;
         margin: 0 auto;
+        margin-bottom: 6rem;
     }
 }

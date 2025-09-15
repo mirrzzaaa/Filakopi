@@ -39,12 +39,8 @@ const FormReservasi = ({ nomorWA }) => {
     };
 
     const generatePesanWA = (data) =>
-        `Halo, saya ingin melakukan reservasi meja:
-Nama: ${data.nama}
-Telepon: ${data.telepon}
-Tanggal: ${data.tanggal}
-Waktu: ${data.waktu}
-Jumlah Orang: ${data.jumlah}`;
+        `Halo, saya ingin melakukan reservasi meja, atas nama *${data.nama}* (${data.telepon}) pada *${data.tanggal}* jam *${data.waktu} WIB*, untuk *${data.jumlah} orang*`;
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
