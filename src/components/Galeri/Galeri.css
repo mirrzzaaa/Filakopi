@@ -1,0 +1,40 @@
+.galeri {
+    padding: 60px 20px;
+}
+
+.galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.galeri-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    image-rendering: -webkit-optimize-contrast;
+    /* biar lebih tajam */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.galeri-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsif */
+@media (max-width: 992px) {
+    .galeri-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .galeri-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

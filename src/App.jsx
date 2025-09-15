@@ -6,6 +6,7 @@ import Menu from './components/Menu/Menu';
 import Footer from './components/Footer/Footer';
 import Reservasi from './components/Reservasi/Reservasi';
 import './index.css';
+import Galeri from './components/Galeri/Galeri';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Menu />
       <Reservasi />
+      <Galeri />
       <Footer />
     </>
   )
