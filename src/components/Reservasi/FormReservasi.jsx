@@ -5,22 +5,20 @@ const InputField = ({ field, value, onChange }) => (
     <div className="form-group">
         <label>{field.label}</label>
         <input
-            type={field.type}
+            {...field}
             name={field.name}
-            placeholder={field.placeholder || ""}
             value={value}
             onChange={onChange}
-            min={field.min}
-            max={field.max}
+            autoComplete="off"
             required
         />
     </div>
 );
 
+
 const FormReservasi = ({ nomorWA }) => {
     const [formData, setFormData] = useState({
         nama: "",
-        email: "",
         telepon: "",
         tanggal: "",
         waktu: "",
@@ -29,11 +27,10 @@ const FormReservasi = ({ nomorWA }) => {
 
     const fields = [
         { name: "nama", label: "Nama", type: "text", placeholder: "Masukkan nama lengkap" },
-        { name: "email", label: "Email", type: "email", placeholder: "Masukkan email" },
-        { name: "telepon", label: "Telepon", type: "tel", placeholder: "08xxxxxxxxxx" },
+        { name: "telepon", label: "Telepon", type: "tel", placeholder: "08xxxxxxxxxx", pattern: "[0-9]{10,13}" },
         { name: "tanggal", label: "Tanggal Reservasi", type: "date" },
         { name: "waktu", label: "Waktu Reservasi", type: "time" },
-        { name: "jumlah", label: "Jumlah Orang", type: "number", min: 1, max: 20, placeholder: "Misal: 2" },
+        { name: "jumlah", label: "Jumlah Orang", type: "number", min: 1, max: 20, placeholder: "Misal: 2", inputMode: "numeric" },
     ];
 
     const handleChange = (e) => {
@@ -44,7 +41,6 @@ const FormReservasi = ({ nomorWA }) => {
     const generatePesanWA = (data) =>
         `Halo, saya ingin melakukan reservasi meja:
 Nama: ${data.nama}
-Email: ${data.email}
 Telepon: ${data.telepon}
 Tanggal: ${data.tanggal}
 Waktu: ${data.waktu}

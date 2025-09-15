@@ -15,9 +15,9 @@ export default function About() {
                     kerja produktif, hingga momen kebersamaan.
                 </p>
                 <div className="about-hours">
-                    <h3>Filokofie Hours</h3>
-                    <p>Monday – Sunday</p>
-                    <p>08.00 AM – 11.00 PM</p>
+                    <h3>Jam Operasional Filakofie</h3>
+                    <p>Minggu - Sabtu</p>
+                    <p>08.00 WIB - 23.00 WIB</p>
                 </div>
             </div>
         </section>

@@ -15,7 +15,7 @@
 
 
 .menu-book {
-    width: 600px;
+    width: 500px;
     /* total dua halaman */
     height: 800px;
 }
@@ -42,9 +42,15 @@
 @media (max-width: 768px) {
     .menu-intro {
         max-width: 85%;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .page {
-        max-width: 85%;
+        width: 85%;
+        margin: 0 auto;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
     }
 }

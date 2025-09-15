@@ -1,31 +1,46 @@
 .reservasi {
-    padding: 80px 20px;
-    background: #f9f9f9;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.reservasi-text {
+    flex: 1;
+    max-width: 400px;
+    font-family: "Comfortaa", sans-serif;
+    color: #333;
+}
+
+.reservasi-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #4c7440;
+}
+
+.reservasi-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+    color: #444;
 }
 
 .reservasi-container {
-    max-width: 700px;
-    margin: 0 auto;
-    position: relative;
-    /* pastikan input tidak tertutup overlay */
-}
-
-.reservasi h2 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    color: #184d26;
-}
-
-.reservasi p {
-    font-size: 1rem;
-    margin-bottom: 40px;
-    color: #444;
+    flex: 1;
+    max-width: 500px;
+    background: #f8f9f9;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .reservasi-form {
     display: grid;
-    gap: 20px;
+    gap: 0.9rem;
 }
 
 .form-group {
@@ -35,37 +50,66 @@
 }
 
 .form-group label {
-    font-weight: bold;
-    margin-bottom: 6px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
     color: #333;
+
 }
 
 .form-group input {
-    padding: 12px;
+    padding: 8px 10px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 6px;
     outline: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: 0.3s;
+    z-index: 2;
+    /*agar bisa melakukan inpu*/
+    pointer-events: auto;
+    position: relative;
 }
 
 .form-group input:focus {
-    border-color: #184d26;
-    box-shadow: 0 0 5px rgba(24, 77, 38, 0.4);
+    border-color: #4c7440;
+    box-shadow: 0 0 5px rgba(76, 116, 64, 0.4);
 }
 
 .btn-reservasi {
-    background: #184d26;
+    background: #4c7440;
     color: white;
-    padding: 14px 20px;
+    padding: 0.8rem 1.2rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    /*agar bisa menekan tombol*/
+    position: relative;
 }
 
 .btn-reservasi:hover {
-    background: #0e3116;
+    background: #2f4f2f;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .reservasi {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .reservasi-text {
+        max-width: 85%;
+        margin-bottom: 1.5rem;
+    }
+
+    .reservasi-container {
+        width: 85%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }

@@ -2,12 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* biar isi lebih ketengah */
     padding: 4rem 5%;
     gap: 1rem;
-    /* jarak antar elemen lebih kecil */
     max-width: 1000px;
-    /* perkecil kontainer */
     margin: 0 auto;
 }
 
@@ -16,13 +13,11 @@
     position: relative;
     display: flex;
     justify-content: flex-start;
-    /* gambar tetap nempel kiri */
 }
 
 .about-image img {
     width: 100%;
     max-width: 380px;
-    /* sedikit diperkecil */
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
@@ -32,7 +27,7 @@
     font-family: "Comfortaa", sans-serif;
     color: #333;
     max-width: 400px;
-    /* biar teks tidak terlalu panjang */
+    /* agar teks tidak terlalu panjang */
 }
 
 .about-text p {
@@ -45,9 +40,7 @@
     margin-top: 1.5rem;
     padding: 1rem;
     background: #f8f9f9;
-    /* abu muda */
     border-left: 8px solid #4c7440;
-    /* aksen hijau */
     border-radius: 6px;
     font-size: 0.95rem;
     line-height: 1.6;
@@ -58,7 +51,6 @@
     font-size: 1.1rem;
     color: #4c7440;
 }
-
 
 .about-image::before {
     content: "";
@@ -95,5 +87,4 @@
         left: -30px;
         width: 102%;
     }
-
 }
