@@ -32,6 +32,13 @@
     cursor: pointer;
 }
 
+.nav-menu li a:hover {
+    transform: translateY(-4px) scale(0.05);
+    color: #496f3c;
+    text-decoration: underline;
+}
+
+
 .hamburger {
     display: none;
     flex-direction: column;
