@@ -22,12 +22,11 @@ function Navbar() {
             </div>
 
             <ul className={isOpen ? "nav-menu show" : "nav-menu"}>
-                <li>Beranda</li>
-                <li>Tentang Kami</li>
-                <li>Menu</li>
-                <li>Reservasi</li>
-                <li>Galeri</li>
-                <li>FAQ</li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservasi">Reservasi</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
     );

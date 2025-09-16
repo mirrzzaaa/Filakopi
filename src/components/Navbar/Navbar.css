@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #ffffff;
     color: #496f3c;
-    padding: 10px 20px;
+    padding: 12px 40px;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,7 +23,7 @@
 .nav-menu {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 30px;
     margin: 0;
     padding: 0;
 }
@@ -45,6 +45,7 @@
     background-color: #496f3c;
 }
 
+
 @media (max-width: 768px) {
     .navbar {
         justify-content: center;
@@ -64,7 +65,7 @@
         top: 60px;
         background-color: #ffffff;
         flex-direction: column;
-        width: 768px;
+        width: 100%;
         text-align: center;
         display: none;
         padding: 10px 0;
@@ -78,4 +79,18 @@
     .nav-menu li {
         margin: 10px 0;
     }
+
+    .nav-menu li a {
+        text-decoration: none;
+        color: #496f3c;
+        padding: 8px 12px;
+        display: inline-block;
+        transition: 0.3s;
+    }
+
+    .nav-menu li a:hover {
+        color: white;
+        border-radius: 5px;
+    }
+
 }

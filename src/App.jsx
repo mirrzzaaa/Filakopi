@@ -13,15 +13,31 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div>
+
       <Navbar />
       <Hero />
-      <About />
-      <Menu />
-      <Reservasi />
-      <Galeri />
-      <Footer />
-    </>
+
+      <section id='tentang'>
+        <About />
+      </section>
+
+      <section id='menu'>
+        <Menu />
+      </section>
+
+      <section id='reservasi'>
+        <Reservasi />
+      </section>
+
+      <section id='galeri'>
+        <Galeri />
+      </section>
+
+      <section id='faq'>
+        <Footer />
+      </section>
+    </div>
   )
 }
 

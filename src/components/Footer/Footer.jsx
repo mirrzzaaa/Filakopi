@@ -36,16 +36,16 @@ export default function Footer() {
                         <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="wa">
                             <FaWhatsapp />
                         </a>
-                        <a href="https://instagram.com/filakofie" target="_blank" rel="noopener noreferrer" className="ig">
+                        <a href="https://www.instagram.com/filokofie?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="ig">
                             <FaInstagram />
                         </a>
-                        <a href="https://tiktok.com/@filakofie" target="_blank" rel="noopener noreferrer" className="tt">
+                        <a href="https://www.tiktok.com/@filokofie?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="tt">
                             <FaTiktok />
                         </a>
                         <a href="mailto:filakofie@gmail.com" className="mail">
                             <FaEnvelope />
                         </a>
-                        <a href="https://gofood.co.id/" target="_blank" rel="noopener noreferrer" className="gojek">
+                        <a href="https://gofood.co.id/malang/restaurant/filokofie-sukun-9e64260b-6f13-44ab-b203-cf49373e1c2a" target="_blank" rel="noopener noreferrer" className="gojek">
                             <SiGojek />
                         </a>
                         <a href="https://food.grab.com/" target="_blank" rel="noopener noreferrer" className="grab">
