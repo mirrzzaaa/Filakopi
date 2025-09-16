@@ -1,5 +1,5 @@
 import "./About.css";
-import filoImage from "../../assets/cafe.jpg"; // sesuaikan path gambarnya
+import filoImage from "../../assets/cafe.jpg";
 
 export default function About() {
     return (
@@ -15,7 +15,7 @@ export default function About() {
                     kerja produktif, hingga momen kebersamaan.
                 </p>
                 <div className="about-hours">
-                    <h3>Jam Operasional Filakofie</h3>
+                    <h3>Jam Operasional</h3>
                     <p>Minggu - Sabtu</p>
                     <p>08.00 WIB - 23.00 WIB</p>
                 </div>

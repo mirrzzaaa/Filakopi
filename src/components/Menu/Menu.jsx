@@ -25,7 +25,6 @@ export default function Menu() {
                 mobileScrollSupport: true,
             });
 
-            // Masukkan halaman sebagai <img>, bukan div.page di DOM
             pageFlip.loadFromImages([menu1, menu2, menu3, menu4]);
         }
     }, []);
